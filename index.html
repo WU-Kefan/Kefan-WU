@@ -1,0 +1,475 @@
+<!--Student Name: WU Kefan
+Student ID: 19083898D-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <title>WU Kefan</title>
+    <script type="text/javascript">
+        function func() {
+            let leftCol = document.getElementById('leftCol');
+            if (leftCol.style.display === "block") {
+                leftCol.style.display = "none"
+            }else {
+                leftCol.style.display = "block";
+            }
+        }
+    </script>
+    <style>
+        html, body {
+            padding: 0;
+            margin: 0;
+            height: auto;
+        }
+        body{
+            min-width: 1024px;
+            min-height: auto;
+            font-family: Arial, sans-serif;
+            color: #565656;
+            font-size: 1.1em
+        }
+        .content {
+            min-height: calc(100vh - 70px);
+        }
+
+        ul.Nav {
+            min-width: 1024px;
+            width: 100%;
+            overflow: hidden;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            top: 0;
+            left: 0;
+            border-bottom: 2px solid #888888;
+            position: fixed;
+            background-color: white;
+            z-index: 1;
+        }
+        .Nav li{
+            float: left;
+            font-family: "serif", sans-serif;
+            font-size: 1em;
+        }
+        .Nav li a{
+            display: block;
+            text-align: center;
+            padding: 20px 15px 20px 15px;
+            text-decoration: none;
+            color: #888888;
+        }
+        .Nav li:hover {
+            background-color: #888888;
+        }
+        .Nav li:hover a {
+            color: white;
+        }
+
+        #leftCol {
+            float: left;
+            width: 18%;
+            padding: 80px 5% 50px 5%;
+            position: fixed;
+            display: block;
+        }
+
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: auto;
+            background-color: #888888;
+            color: white;
+            text-align: center;
+            position: absolute;
+            z-index: 1;
+            bottom: 100%;
+            left: 50%;
+            margin-left: -60px;
+            border-radius: 6px;
+            border: 1px solid #888888;
+        }
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+
+        .leftCol .photo img {
+            border-radius: 50px/100px;
+            border: 2px solid beige;
+        }
+
+        .contact div{
+            padding-bottom: 10px;
+        }
+
+        #location::before {
+            content: " ";
+            background-image: url("image/location.png");
+            background-size: 1em 1em;
+            position: absolute;
+            width: 1em;
+            height: 1em;
+        }
+        #WhatsApp::before {
+            content: " ";
+            background-image: url("image/WhatsApp.png");
+            background-size: 1em 1em;
+            position: absolute;
+            bottom: 50%;
+            width: 1em;
+            height: 1em;
+        }
+        #WeChat::before {
+            content: " ";
+            background-image: url("image/WeChat.png");
+            background-size: 1em 1em;
+            position: absolute;
+            bottom: 50%;
+            width: 1em;
+            height: 1em;
+        }
+        #Email::before {
+            content: " ";
+            background-image: url("image/Email.jpeg");
+            background-size: 1em 1em;
+            position: absolute;
+            bottom: 50%;
+            width: 1em;
+            height: 1em;
+
+        }
+        #Linkedin::before {
+            content: " ";
+            background-image: url("image/Linkedin.png");
+            background-size: 1em 1em;
+            position: absolute;
+            bottom: 50%;
+            width: 1em;
+            height: 1em;
+        }
+
+        .main {
+            float: left;
+            max-width: 55%;
+            padding-top: 80px;
+            padding-left: 28%;
+            margin-bottom: 5px;
+        }
+        #button {
+            margin-left: 2em;
+            cursor: pointer;
+            background-color: #888888;
+            padding: 5px 10px 5px 10px;
+            border: none;
+            border-radius: 6px;
+            color: white;
+            text-align: center;
+        }
+        p.title::first-letter{
+            color : #3f3f3f;
+            font-size:110%;
+        }
+        p.title {
+            line-height: 0.8em;
+            margin-left: 1em;
+        }
+
+        .basic p a {
+            color: #333333;
+        }
+
+
+        .footer{
+            width: 100%;
+            text-align: center;
+            color: white;
+            bottom: -800px;
+            height: 80px;
+            padding-top: 1px;
+            padding-bottom: 5px;
+            line-height: 1em;
+            background: linear-gradient(to right, #74ebd5, #ACB6E5);
+            box-shadow: 3px 3px 3px 3px white inset;
+        }
+    </style>
+</head>
+<body id="body">
+<header>
+    <div class="NavBar">
+        <ul class="Nav">
+            <li><a href="#1"><span style="padding-right: 60px; padding-left: 60px; font-weight: bold;">Kefan</span></a></li>
+            <li><a href="#2">Professional Experience</a></li>
+            <li><a href="#3">Research Experience</a></li>
+            <li><a href="#4">Social Experience</a></li>
+            <li><a href="#5">Skill</a></li>
+            <li style="float: right; padding-right: 2em"><a href="#6">Personal Life</a></li>
+        </ul>
+    </div>
+</header>
+
+<div class="content">
+    <div class="leftCol" id="leftCol">
+        <div class="photo"><img src="image/Formal Photo.jpg" height="200px" width="189px" alt="formal photo"></div>
+        <div class="Name"><h3>吴可凡 (WU Kefan)</h3></div>
+        <div class="label">
+            <p>College Student, Content Creator, and Music Lover</p>
+        </div>
+        <div class="contact">
+            <div id="location" style="width: 100%"><pre>   Homantin, Hong Kong</pre></div>
+            <div id="WhatsApp" class="tooltip"><pre>   WhatsApp          </pre><span class="tooltiptext">5600 1153</span></div>
+            <div id="WeChat" class="tooltip"><pre>   WeChat          </pre><span class="tooltiptext">18454353081</span></div>
+            <div id="Email" class="tooltip"><pre>   Email          </pre><span class="tooltiptext">19083898D@connect.polyu.hk</span></div>
+            <div id="Linkedin" class="tooltip"><pre>   Linkedin          </pre><span class="tooltiptext">18454353081</span></div>
+        </div>
+    </div>
+
+    <div class="main" id="1">
+        <div class="intro">
+            <div class="basic">
+                <h1>WU Kefan<button id="button" type="button" onclick="func()">Show/Hide LeftBar</button></h1>
+
+                    <p class="title">Senior Student (Major in Marketing, minor in Enterprise Computing)</p>
+                    <p class="title">Department of Management and Marketing</p>
+                    <p class="title">Faculty of Business</p>
+                    <p class="title">Hong Kong Polytechnic University</p>
+
+                <p style="font-style: italic; line-height: 1.5em">
+                    <i class="fa fa-book"></i>
+                    I have interned in different companies or organizations and have professional skills in <strong>Marketing and Enterprise Computing</strong>.
+                    I also operated personal accounts and created content on various social platforms.<span id="2"></span>
+                    Please view my homepage according to your needs.
+                    You are also welcome to contact me through <span style="font-style: italic">WeChat</a></span>, <span style="font-style: italic">Email</a></span>.</p>
+            </div>
+
+            <div class="ProfExperience">
+                <h2 id="prof">Professional Experience <span class="fa fa-black-tie"></span></h2>
+                <ol type="i">
+                    <li>
+                        <p><strong>Market Analysis Intern @ Inspur Group Co., Ltd.</strong></p>
+                        <ul>
+                            <li>
+                                <p>
+                                    Participate in domestic steel industrial Internet industry analysis,
+                                    including analysis of enterprise information, industry research reports, inspur database,
+                                    national and industry data statistics, etc., read more than 50 papers,
+                                    and co-produce 60 pages’ report and 50 pages of PPT,  provide reference for Inspur's marketing in Shandong,
+                                    Hebei and other provinces.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Conducted regional data surveys on steel production capacity and equipment for more than 25 companies, surveyed database,
+                                    and verified through multiple third-party enterprise reports to make market forecasts for Inspur Steel Industrial Internet.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Deeply involved in market analysis of steel industry Internet industry,
+                                    independently completed steel industry Internet competitor analysis, application scenario sorting, etc.,
+                                    wrote about 30 pages' report with data analysis tables and visual charts appendix.
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><strong>Student Research Assistant @ Hong Kong Polytechnic University</strong></p>
+                        <ul>
+                            <li>
+                                <p>
+                                    Helped professor sort and classify research data or text information,
+                                    including but not limited to data classification, keyword extraction, data statistics,
+                                    questionnaire editing, and table creation.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Built the professor's website from scratch, including static web design,
+                                    document updates in the webpage, and continuous updates of webpage content.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Engaged in the daily student information management, slide production & modification, and paper sorting.
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><strong>Project Operation Intern @ Accenture (China) Co., Ltd.</strong></p>
+                        <ul>
+                            <li>
+                                <p>
+                                    Served a well-known clothing brand in mainland China,
+                                    conducted strategic consulting planning for its latest product lines and brands,
+                                    categorized and analyzed more than 10 competitor companies and positioned them,
+                                    conducted crowd portrait analysis of target customers in different line cities,
+                                    and conducted workshops with the brand.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Participated in the digital marketing project of a leading home appliance brand in mainland China,
+                                    developed image promotion strategy for its brand new products, conceived more than 20 brand promotion ideas,
+                                    wrote and revised slides, and worked with the brand to complete the production of promotional ads.
+                                </p>
+                            </li>
+                            <li>
+                                <p id="3">
+                                    Responsible for the team's daily affairs arrangement, collecting market information and reporting,
+                                    participating in regular meetings and writing minutes, and participating in the writing of team content copy.
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="ResearchExperience">
+                <h2>Research Experience <span class="fa fa-bookmark"></span></h2>
+                <ol type="i">
+                    <li>
+                        <p><strong>Understanding the Role of Image and Language in Fake Marketing Information on Consumer Behavior (working paper)</strong></p>
+                        <p>Supervisor: Dr. NG Ka Chung Boris, Undergraduate Research and Innovation Scheme @ PolyU</p>
+                        <ul>
+                            <li>
+                                <p>
+                                    The objective of this project is to identify and study the visual and linguistic features of false marketing
+                                    information and develop a model based on these features to differentiate between misleading and reliable information.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    The paper is still in an early-stage.
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><strong>Contamination Effect in Post-pandemic Era: The Impact of External Environmental Factors on Customer Purchase Intention (working paper)</strong></p>
+                        <p>Supervisor: Dr. CHEN Fangyuan, Final Year Project</p>
+                        <ul>
+                            <li>
+                                <p>
+                                    The objective of this project is to examine the impact of consumer contamination,
+                                    where consumers reduce the perceived value of products touched by others,
+                                    on consumer purchasing behavior in the post-epidemic era<span id="4"></span>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    The paper is still in an early-stage.
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="SocialExperience">
+                <h2>Social Experience <span class="fa fa-grav"></span></h2>
+                <ol type="i">
+                    <li>
+                        <p><strong>Member & Leader of the Freshman Team @ Hong Kong Polytechnic University Mandarin Debate Team</strong></p>
+                        <ul>
+                            <li>
+                                <p>
+                                    Participated in many internal and external competitions of the debate team,
+                                    participated in exchange competitions with Beijing Institute of Technology, Civil Aviation University of China,
+                                    and other universities during the holidays, and also participated in the Hong Kong Lingnan Competition;
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Responsible for leading the freshmen to participate in the freshman team competition,
+                                    organizing freshmen to discuss and guide and inspire them to have a deeper understanding of the debate.
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><strong>External Vice President @ PolyU Hall Choir</strong></p>
+                        <ul>
+                            <li>
+                                <p>
+                                    Coordinate the work of various positions in the association,
+                                    be responsible for the contact of external student associations or organizations,
+                                    jointly participate in organizing two school large-scale parties and competitions,
+                                    and participate in the writing of annual activity planning books;
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Participate in the organization and planning of internal activities of the community and the review and training of new members,
+                                    participate in the planning and organization of many community activities, guide the planning and review of group works,
+                                    <span id="5"></span>participate in the planning and personnel arrangement of large-scale external activities of the community.
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="Skill">
+                <h2>Skill <span class="fa fa-bar-chart"></span></h2>
+                <ol type="i">
+                    <li>
+                        <p id="xmind"><strong>Xmind</strong> <img src="image/xmind.png" height="16em" alt="Xmind"> (Proficient in the production of visual mind maps)</p>
+                    </li>
+                    <li>
+                        <p id="spss"><strong>SPSS</strong> <img src="image/spss.png" height="16em" alt="SPSS"> (Mastering data analysis or comparison through different methods)</p>
+                    </li>
+                    <li>
+                        <p id="qualtrics"><strong>Qualtrics</strong> <img src="image/qualtrics.png" height="16em" alt="Qualtrics"> (Mastering questionnaire design and data collection method)</p>
+                    </li>
+                    <li>
+                        <p id="excel"><strong>Excel</strong> <img src="image/excel.png" height="16em" alt="Excel"> (Mastering common functions, proficient in visual data presentation and analysis)</p>
+                    </li>
+                    <li>
+                        <p id="powerpoint"><strong>PowerPoint</strong> <img src="image/powerpoint.png" height="16em" alt="PowerPoint"> (Proficient in applying templates, familiar with PPT typesetting and animation effects)</p>
+                    </li>
+                    <li id="6">
+                        <p id="coding"><strong>Programming Language</strong> <img src="image/coding.webp" height="16em" alt="Programming Language"> (Business level in Python, SQL, HTML, CSS)</p>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="PersonalLife">
+                <h2>Personal Life <span class="fa fa-music"></span></h2>
+                <ol type="i">
+                    <li>
+                        <p>Love traveling, exploring cities&#127750;, and recording life in various media&#127909;.</p>
+
+                    </li>
+                    <li>
+                        <p>Enjoy fitness&#128170;, working out in the gym&#127939;, and I also love climbing or hiking&#9968;.</p>
+                    </li>
+                    <li>
+                        <p>Often listen to songs and enjoy the feeling of being surrounded by music.<br>
+                            &#127908;&#127908;&#127908;
+                            <a href="https://www.bilibili.com/video/BV14m4y1D7b3?share_source=copy_web" target="iframe" style="text-decoration: none; color: #888888">Self-uploaded Singing Video in Bilibili</a>
+                            &#129315;
+                        </p>
+                        <iframe src="image/bilibili.png"  width="90%" height="450px" name="iframe"></iframe>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div class="footer">
+            <footer>
+                <div class="footer">
+                    <p style="font-family: American Typewriter, serif">Please Contact Me</p>
+                    <p style="font-family: Chalkduster, fantasy">Wish you the best of luck!</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
